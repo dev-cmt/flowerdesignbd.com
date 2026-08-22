@@ -1,0 +1,5 @@
+[02-Aug-2026 15:39:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: MySQL server has gone away in /home/akashcom/flowerdesignbd.com/template/views/event.gallary.php:18
+Stack trace:
+#0 /home/akashcom/flowerdesignbd.com/template/views/event.gallary.php(18): mysqli->query('SELECT * FROM  ...')
+#1 {main}
+  thrown in /home/akashcom/flowerdesignbd.com/template/views/event.gallary.php on line 18
