@@ -13,7 +13,7 @@ foreach($Logs_data as $logsRow)
 <div class="container-fluid">
 <div class="profile-foreground position-relative mx-n4 mt-n4">
 <div class="profile-wid-bg">
-<img src="<?php echo pathUrl(__DIR__ . '/../../../'); ?>public/assets/images/profile-bg.jpg" alt="" class="lazy profile-wid-img" />
+<img src="<?php echo pathUrl(__DIR__ . '/../../../'); ?>public/images/profile-bg.jpg" alt="" class="lazy profile-wid-img" />
 </div>
 </div>
 <div class="pt-4 mb-4 mb-lg-3 pb-lg-4 profile-wrapper">
@@ -271,3 +271,4 @@ toastr.error('Confirm password not Match');
 });
 </script>
 <?php } } } ?>
+

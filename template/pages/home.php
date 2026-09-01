@@ -1,24 +1,6 @@
-<div id="root"></div>
-<script type="text/javascript">
-let functionUrl   = '/function/';
-let pageUrl = '/template/views/home';
-var objXMLHttpRequest = new window.XMLHttpRequest();
-method = 'GET';
-var url = new URL (baseUrl + pageUrl + baseUrlformat);
-objXMLHttpRequest.onreadystatechange = function() {
-if(objXMLHttpRequest.readyState === 4) {
-if(objXMLHttpRequest.status === 200) {
-objXMLHttpRequest.onload = function () {
-document.getElementById("root").innerHTML=objXMLHttpRequest.responseText;
-};
-}else{
-reject('Error Code: ' +  objXMLHttpRequest.status + ' Error Message: ' + objXMLHttpRequest.statusText);
-}
-}
-}
-objXMLHttpRequest.open(method, encodeURI(url), false);
-objXMLHttpRequest.send();
-</script>
+<?php
+require_once __DIR__ . '/../views/home.php';
+?>
 <script>
 (function(d, s, id) {
 var js, fjs = d.getElementsByTagName(s)[0];

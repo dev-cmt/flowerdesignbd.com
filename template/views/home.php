@@ -1,7 +1,7 @@
 <?php
-include '../../config/url/pathUrl.url.php';
-include '../../config/db.config.php';
-include '../../template/parts/parts.header.php';
+require_once __DIR__ . '/../../config/url/pathUrl.url.php';
+require_once __DIR__ . '/../../config/db.config.php';
+require_once __DIR__ . '/../../template/parts/parts.header.php';
 $data = new Databases;
 ?>
 <section id="packages" class="section-padding">

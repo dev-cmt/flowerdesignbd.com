@@ -18,7 +18,7 @@ include '../../../../config/url/pathUrl.url.php';
 <div class="col-lg-12">
 <div class="text-center pt-4">
 <div class="margin-top-300 margin-top-120">
-<img data-srcset="<?php echo pathUrl(__DIR__ . '/../../../'); ?>public/assets/images/error.svg" class="lazy error-basic-img move-animation">
+<img data-srcset="<?php echo pathUrl(__DIR__ . '/../../../'); ?>public/images/error.svg" class="lazy error-basic-img move-animation">
 </div>
 <div class="mt-n4 margin-top-50">
 <h3 class="fw-medium">404</h3>
@@ -31,3 +31,4 @@ include '../../../../config/url/pathUrl.url.php';
 </div>
 </div>
 </div>
+

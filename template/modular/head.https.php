@@ -32,8 +32,8 @@ $outputCSS .= '
 $minifierCSS = new Minify\CSS($outputCSS);
 echo $minifierCSS->minify();
 ?>
-<script src="<?php echo pathUrl(__DIR__ . '/../../'); ?>public/js/jquery-ui.min.js"></script>
 <script src="<?php echo pathUrl(__DIR__ . '/../../'); ?>public/js/jquery.3.7.0.min.js"></script>
+<script src="<?php echo pathUrl(__DIR__ . '/../../'); ?>public/js/jquery-ui.min.js"></script>
 <script src="<?php echo pathUrl(__DIR__ . '/../../'); ?>public/baseUrl.js"></script>
 </head>
 <body>

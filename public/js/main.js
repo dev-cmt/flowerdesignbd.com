@@ -79,9 +79,10 @@
 			scrollTop: 0
 		}, 1000);
 	});
-
     //=====  WOW active
-	new WOW().init();
+    if (typeof WOW !== 'undefined') {
+        new WOW().init();
+    }
 
 	//  Star Scrolling nav
 	$('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {

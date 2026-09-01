@@ -1,22 +1,23 @@
 <div id="root"></div>
 <script type="text/javascript">
-let urllogin      = '/template/function/login';
-let serviceUrl    = '/template/content/secure/login';
+let urllogin      = '/ws-admin/template/function/login';
+let serviceUrl    = '/ws-admin/template/content/secure/login';
 var objXMLHttpRequest = new window.XMLHttpRequest();
 var url = new URL (baseUrl + serviceUrl + baseUrlformat);
 // page onload
 objXMLHttpRequest.onreadystatechange = function() {
 if(objXMLHttpRequest.readyState === 4) {
 if(objXMLHttpRequest.status === 200) {
-objXMLHttpRequest.onload = function () {
-document.getElementById("root").innerHTML=objXMLHttpRequest.responseText;
-};
+var root = document.getElementById("root");
+if (root) {
+root.innerHTML = objXMLHttpRequest.responseText;
+}
 }else {
-reject('Error Code: ' +  objXMLHttpRequest.status + ' Error Message: ' + objXMLHttpRequest.statusText);
+console.error('Error Code: ' +  objXMLHttpRequest.status + ' Error Message: ' + objXMLHttpRequest.statusText);
 }
 }
 }
-objXMLHttpRequest.open("GET", encodeURI(url), false);
+objXMLHttpRequest.open("GET", encodeURI(url), true);
 objXMLHttpRequest.send();
 // admin login now
 $('.submit').click( function() {
@@ -40,3 +41,4 @@ toastr.success(data);
 });
 });
 </script>
+

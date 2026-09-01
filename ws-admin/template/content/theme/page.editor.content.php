@@ -9,7 +9,7 @@ if ($themenuQ_data->num_rows > 0) {
 foreach($themenuQ_data as $menuRow)
 {
 ?>
-<script src="<?php echo pathUrl(__DIR__ . '/../../../'); ?>public/assets/ckeditor/ckeditor.js"></script>
+<script src="<?php echo pathUrl(__DIR__ . '/../../../'); ?>"></script>
 <div class="page-content">
 <div class="container-fluid">
 <div class="row">
@@ -92,3 +92,4 @@ filebrowserUploadUrl: baseUrl + urlupload + baseUrlformat
 });
 </script>
 <?php } } } ?>
+

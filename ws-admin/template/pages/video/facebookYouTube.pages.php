@@ -1,5 +1,5 @@
 <?php $data = new Databases; ?>
-<script src="<?php echo pathUrl(__DIR__ . '/../../../'); ?>public/assets/ckeditor/ckeditor.js"></script>
+<script src="<?php echo pathUrl(__DIR__ . '/../../../'); ?>"></script>
 <div class="page-content">
 <div class="container-fluid">
 <div class="row">
@@ -144,3 +144,4 @@ setTimeout(function(){ location.reload(); }, 3000);
 });
 });
 </script>
+

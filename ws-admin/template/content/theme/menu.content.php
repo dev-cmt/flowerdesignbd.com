@@ -3,7 +3,7 @@ include '../../../../config/db.config.php';
 include '../../../../config/url/pathUrl.url.php';
 $data = new Databases;
 ?>
-<script src="<?php echo pathUrl(__DIR__ . '/../../../'); ?>public/assets/ckeditor/ckeditor.js"></script>
+<script src="<?php echo pathUrl(__DIR__ . '/../../../'); ?>"></script>
 <div class="page-content">
 <div class="container-fluid">
 <!-- start page title -->
@@ -453,3 +453,4 @@ setTimeout(function(){ location.reload(); }, 3000);
 }
 });
 </script>
+

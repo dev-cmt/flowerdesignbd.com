@@ -1,6 +1,6 @@
 <?php
-include '../../config/url/pathUrl.url.php';
-include '../../config/db.config.php';
+require_once __DIR__ . '/../../config/url/pathUrl.url.php';
+require_once __DIR__ . '/../../config/db.config.php';
 $data = new Databases;
 ?>
 <header class="home-area-1 overflow-hidden section-padding"></header>

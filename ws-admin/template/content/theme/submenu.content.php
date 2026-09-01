@@ -9,7 +9,7 @@ if ($menuQ_data->num_rows > 0) {
 foreach($menuQ_data as $upRow)
 {
 ?>
-<script src="<?php echo pathUrl(__DIR__ . '/../../../'); ?>public/assets/ckeditor/ckeditor.js"></script>
+<script src="<?php echo pathUrl(__DIR__ . '/../../../'); ?>"></script>
 <div class="page-content">
 <div class="container-fluid">
 <!-- start page title -->
@@ -290,3 +290,4 @@ setTimeout(function(){ location.reload(); }, 3000);
 });
 </script>
 <?php } } } ?>
+

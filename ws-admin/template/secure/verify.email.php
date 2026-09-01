@@ -16,7 +16,10 @@ var url = new URL (baseUrl + serviceUrl + baseUrlformat);
 objXMLHttpRequest.onreadystatechange = function() {
 if(objXMLHttpRequest.readyState === 4) {
 if(objXMLHttpRequest.status === 200) {
-document.getElementById("root").innerHTML=objXMLHttpRequest.responseText;
+var root = document.getElementById("root");
+if (root) {
+root.innerHTML = objXMLHttpRequest.responseText;
+}
 }else {
 reject('Error Code: ' +  objXMLHttpRequest.status + ' Error Message: ' + objXMLHttpRequest.statusText);
 }
@@ -40,12 +43,12 @@ url: new URL (baseUrl + functionUrl + baseUrlformat),
 data: formData,
 encode: true,
 success:function(data){
-$('.preload').html("
+$('.preload').html(`
 <div class='d-flex align-items-center text-info'>
 <p class='results'>Loading...</p>
 <div class='spinner-border spinner-border-sm ms-auto' role='status' aria-hidden='true'></div>
 </div>
-");
+`);
 setTimeout(function(){ location.reload(); }, 3000);
 }
 })

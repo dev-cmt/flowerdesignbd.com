@@ -1,2 +1,4 @@
 let baseUrlformat = '.php';
-var baseUrl = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
+var pathParts = window.location.pathname.split('/').filter(Boolean);
+var basePath = pathParts.length ? '/' + pathParts[0] : '';
+var baseUrl = window.location.origin + basePath;

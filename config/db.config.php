@@ -1,7 +1,9 @@
 <?php
 $host = "Localhost";
-$user = "akashcom_event";
-$pass = "Rana@#01737";
+// $user = "akashcom_event";
+// $pass = "Rana@#01737";
+$user = "root";
+$pass = "";
 $db   = "akashcom_event";
 try {
 $connect = new PDO ("mysql:host=$host;dbname=$db", "$user", "$pass", array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8mb4" , "SET SESSION time_zone = 'Asia/Dhaka'"));

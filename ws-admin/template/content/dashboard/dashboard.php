@@ -24,7 +24,7 @@ $data = new Databases;
 </div>
 <div class="col-xxl-3 ms-auto">
 <div class="mb-n5 pb-1 faq-img d-none d-xxl-block">
-<img src="<?php echo pathUrl(__DIR__ . '/../../../'); ?>public/assets/images/faq-img.png" alt="" class="img-fluid">
+<img src="<?php echo pathUrl(__DIR__ . '/../../../'); ?>public/images/faq-img.png" alt="" class="img-fluid">
 </div>
 </div>
 </div>
@@ -236,3 +236,4 @@ Where does it come from ?
 </div>
 <!-- container-fluid -->
 </div>
+

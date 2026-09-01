@@ -10,15 +10,16 @@ var url = new URL (baseUrl + serviceUrl + baseUrlformat + getID);
 objXMLHttpRequest.onreadystatechange = function() {
 if(objXMLHttpRequest.readyState === 4) {
 if(objXMLHttpRequest.status === 200) {
-objXMLHttpRequest.onload = function () {
-document.getElementById("root").innerHTML=objXMLHttpRequest.responseText;
-};
+var root = document.getElementById("root");
+if (root) {
+root.innerHTML = objXMLHttpRequest.responseText;
+}
 }else {
-reject('Error Code: ' +  objXMLHttpRequest.status + ' Error Message: ' + objXMLHttpRequest.statusText);
+console.error('Error Code: ' +  objXMLHttpRequest.status + ' Error Message: ' + objXMLHttpRequest.statusText);
 }
 }
 }
-objXMLHttpRequest.open("GET", encodeURI(url), false);
+objXMLHttpRequest.open("GET", encodeURI(url), true);
 objXMLHttpRequest.send();
 // lockscreen login now
 $('.submit').click( function() {

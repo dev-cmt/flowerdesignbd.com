@@ -1,6 +1,6 @@
 <?php
-include '../../config/url/pathUrl.url.php';
-include '../../config/db.config.php';
+require_once __DIR__ . '/../../config/url/pathUrl.url.php';
+require_once __DIR__ . '/../../config/db.config.php';
 $data = new Databases;
 if(isset($_GET['getid'])){
 $id = $_GET['getid'];

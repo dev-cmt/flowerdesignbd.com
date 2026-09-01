@@ -10,6 +10,8 @@ require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../config/db.config.php';
 require_once __DIR__ . '/../config/url/pathUrl.url.php';
 $data = new Databases;
+$wsAdminRoot = __DIR__ . '/../ws-admin';
+chdir($wsAdminRoot);
 $router = new \Bramus\Router\Router();
 $router->get('/', function (){
 include 'template/pages/dashboard/dashboard.php';
